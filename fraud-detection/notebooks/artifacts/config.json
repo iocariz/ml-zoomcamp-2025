@@ -1,0 +1,30 @@
+{
+  "n_features": 88,
+  "batch_size": 256,
+  "scaler_type": "robust",
+  "test_size": 0.2,
+  "val_size": 0.2,
+  "top_features": [
+    "Is_Business_Hours",
+    "V14_V12_mult",
+    "V17_V14_mult",
+    "V17",
+    "V14",
+    "V17_V12_mult",
+    "V12",
+    "V10",
+    "V11",
+    "V_mean",
+    "V16",
+    "V_l2_norm",
+    "V_l2_norm_sq",
+    "V_l1_norm",
+    "V_extreme_count",
+    "V_std",
+    "V4",
+    "V_min",
+    "V3",
+    "V3_percentile"
+  ],
+  "timestamp": "2025-12-21T19:40:47.767805"
+}

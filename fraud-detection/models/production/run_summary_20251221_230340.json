@@ -1,0 +1,61 @@
+{
+  "created_at": "2025-12-21T23:03:40.755218",
+  "version": "20251221_230340",
+  "device": "mps",
+  "threshold_percentile": 99.0,
+  "models": {
+    "isolation_forest": "isolation_forest_20251221_230340.pkl",
+    "autoencoder": "autoencoder_20251221_230340.pth",
+    "vae": "vae_20251221_230340.pth",
+    "deep_svdd": "deep_svdd_20251221_230340.pth"
+  },
+  "optuna_used": true,
+  "optuna_best_params": {
+    "autoencoder": {
+      "hidden_1": 128,
+      "hidden_2": 32,
+      "dropout": 0.04526217143938777,
+      "lr": 0.0004036726679140657,
+      "batch_size": 512,
+      "encoding_dim": 24
+    },
+    "vae": {
+      "hidden_1": 128,
+      "hidden_2": 96,
+      "dropout": 0.028445842879945817,
+      "lr": 0.00021445656489767139,
+      "batch_size": 512,
+      "latent_dim": 32
+    },
+    "deep_svdd": {
+      "hidden_1": 128,
+      "hidden_2": 64,
+      "dropout": 0.17989000784839468,
+      "lr": 0.0008656601134298435,
+      "batch_size": 256,
+      "rep_dim": 40
+    }
+  },
+  "results_test_threshold_free": [
+    {
+      "Model": "VAE",
+      "AUROC": 0.960116998071064,
+      "AUPRC": 0.43464927568841316
+    },
+    {
+      "Model": "Autoencoder",
+      "AUROC": 0.9432288943772421,
+      "AUPRC": 0.29288757687473177
+    },
+    {
+      "Model": "IsolationForest",
+      "AUROC": 0.9446332317787672,
+      "AUPRC": 0.04586702143324076
+    },
+    {
+      "Model": "DeepSVDD",
+      "AUROC": 0.49974220764002814,
+      "AUPRC": 0.0012173424477947374
+    }
+  ]
+}

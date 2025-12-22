@@ -1,0 +1,56 @@
+{
+  "autoencoder": {
+    "best_params": {
+      "encoding_dim": 24,
+      "n_layers": 2,
+      "hidden_dim_0": 48,
+      "hidden_dim_1": 112,
+      "dropout_rate": 0.2427013306774357,
+      "activation": "tanh",
+      "batch_size": 256,
+      "learning_rate": 0.00024970737145052745,
+      "optimizer": "adamw"
+    },
+    "best_value": 0.9554739163918233,
+    "n_trials": 6
+  },
+  "vae": {
+    "best_params": {
+      "latent_dim": 16,
+      "n_layers": 2,
+      "hidden_dim_0": 48,
+      "hidden_dim_1": 112,
+      "dropout_rate": 0.2427013306774357,
+      "activation": "leaky_relu",
+      "beta": 1.6241742634326752,
+      "batch_size": 256,
+      "learning_rate": 0.00021757649801197563,
+      "optimizer": "adamw"
+    },
+    "best_value": 0.9489835679965177,
+    "n_trials": 6
+  },
+  "svdd": {
+    "best_params": {
+      "rep_dim": 8,
+      "n_layers": 2,
+      "hidden_dim_0": 32,
+      "hidden_dim_1": 64,
+      "dropout_rate": 0.16094075105530872,
+      "activation": "elu",
+      "learning_rate": 0.00011724148210767077,
+      "batch_size": 256
+    },
+    "best_value": 0.9509781353066247,
+    "n_trials": 20
+  },
+  "threshold": {
+    "best_percentile": 96.52521733675086,
+    "best_value": -72.0,
+    "n_trials": 50
+  },
+  "multi_objective": {
+    "n_pareto_solutions": 2,
+    "n_trials": 100
+  }
+}

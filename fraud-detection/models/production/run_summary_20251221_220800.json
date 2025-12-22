@@ -1,0 +1,40 @@
+{
+  "created_at": "2025-12-21T22:08:00.793346",
+  "version": "20251221_220800",
+  "device": "mps",
+  "threshold_percentile": 99.0,
+  "models": {
+    "isolation_forest": "isolation_forest_20251221_220800.pkl",
+    "autoencoder": "autoencoder_20251221_220800.pth",
+    "vae": "vae_20251221_220800.pth",
+    "deep_svdd": "deep_svdd_20251221_220800.pth"
+  },
+  "optuna_used": false,
+  "optuna_best_params": {
+    "autoencoder": null,
+    "vae": null,
+    "deep_svdd": null
+  },
+  "results_test_threshold_free": [
+    {
+      "Model": "VAE",
+      "AUROC": 0.9661264444484505,
+      "AUPRC": 0.3182361231304103
+    },
+    {
+      "Model": "Autoencoder",
+      "AUROC": 0.9372541508175443,
+      "AUPRC": 0.2407384254881721
+    },
+    {
+      "Model": "DeepSVDD",
+      "AUROC": 0.7445705864325503,
+      "AUPRC": 0.1000782906297092
+    },
+    {
+      "Model": "IsolationForest",
+      "AUROC": 0.9446332317787672,
+      "AUPRC": 0.04586702143324076
+    }
+  ]
+}
